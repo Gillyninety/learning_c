@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 int main(){
-	setuid(geteuid());
+	//setuid(geteuid());
 	system("sudo apt-get update -y && sudo apt update -y && sudo apt upgrade -y");
 }
 
