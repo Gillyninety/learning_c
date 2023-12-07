@@ -1,3 +1,5 @@
+// Program to update linux system through apt. Written for kali, but should work for anything Debian-based
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
