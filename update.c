@@ -12,7 +12,7 @@ void normalUpdate(){
 
 void fullUpgrade(){
 	//setuid(geteuid());
-	system("sudo apt-get update -y && sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade");
+	system("sudo apt-get update -y && sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y");
 }
 
 
