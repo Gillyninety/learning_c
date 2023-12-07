@@ -1,3 +1,5 @@
+//simple program to take two numbers as command line arguments and add them together
+
 #include <stdio.h>
 #include <stdlib.h>
 
