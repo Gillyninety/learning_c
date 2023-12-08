@@ -16,13 +16,9 @@ int main(void) {
 	
 	if (input > 255 || input < 0){
 	puts("Input out of range");
-	return 0;}
+	return 1;}
 	
 	int save = input;
-
-	for (int i = 0; i < 8; i++) {
-        result[i] = '0';
-    	}
 
     	int i = 7;
     	while (input > 0) {
@@ -33,3 +29,4 @@ int main(void) {
 	printf("The binary equivalent of %d in binary is: %s\n", save, result);
 	return 0;
 }
+
