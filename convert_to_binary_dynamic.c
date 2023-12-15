@@ -17,7 +17,7 @@ int main(void) {
 	puts("Input out of range");
 	return 1;}
 	
-	long long int bits = 1;
+	int bits = 1;
 	while ((1 << bits) - 1 < input) {
         bits++;
 	}
@@ -33,7 +33,7 @@ int main(void) {
 
 	int save = input;
 
-    	long long int i = bits - 1;
+    	int i = bits - 1;
     	while (input > 0) {
         result[i--] = (input % 2) + '0';
         input /= 2;
