@@ -5,18 +5,27 @@
 #include <sys/types.h>
 #include <unistd.h>
 
+void checkPrivs(){
+	if (getuid() != 0) {
+	puts("Please run as sudo or root.");
+	exit(0);
+	}
+}
+
 void normalUpdate(){
 	//setuid(geteuid());
-	system("sudo apt-get update -y && sudo apt update -y && sudo apt upgrade -y");
+	system("apt-get update -y && apt update -y && apt upgrade -y");
 }
 
 void fullUpgrade(){
 	//setuid(geteuid());
-	system("sudo apt-get update -y && sudo apt update -y && sudo apt upgrade -y && sudo apt full-upgrade -y");
+	system("apt-get update -y && apt update -y && apt upgrade -y && apt full-upgrade -y");
 }
 
 
 int main(void){
+	checkPrivs();
+	
 	int selection;
 	while(selection != 1 &&  selection != 2){
 	puts("Enter 1 to update\nEnter 2 for full OS upgrade");
