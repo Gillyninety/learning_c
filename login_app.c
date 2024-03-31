@@ -1,7 +1,7 @@
 // The idea is to create a sign up/sign in program in C then to alter it to use C++ later in an effort to 
 // become more familiar with both. 
 // THIS DOES NOT WORK, IS NOT MEMORY SAFE, AND SHOULD NOT BE USED
-// It is purely for reference and educational purposes
+// It is purely for reference and educational purposes, and is still a woork in progress
 // don't forgot to add -lcrypto to gcc
 
 #include <stdlib.h>
